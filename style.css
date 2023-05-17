@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-box {
+  width: 900px;
+  height: 450px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.illustrator-img {
+  position: relative;
+}
+.box-img {
+  position: absolute;
+  top: 150px;
+}
+.faq-div {
+  max-width: 530px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.faq-div .faq-title {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.faq-div-content header {
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.faq-div-content header .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(237, 12%, 33%);
+}
+.faq-div-content header i {
+  font-size: 15px;
+  color: hsl(14, 88%, 65%);
+}
+.faq-div-content .description {
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  padding: 0 15px;
+}
+
+.faq-div-content {
+  margin: 10px 0;
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.faq-div-content .open header .title {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    flex-direction: row;  }
+}
